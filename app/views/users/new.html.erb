@@ -21,7 +21,7 @@
   <%= submit_tag("Submit") 
 <% end %> 
 
-<%= form_with model: User.new do |form| %>
+<%= form_with model: @user do |form| %>
   <%= form.label :username, "Username:" %>
   <%= form.text_field :username %>
   <%= form.label :email, "Email:" %>
