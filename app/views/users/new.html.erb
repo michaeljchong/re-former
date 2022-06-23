@@ -1,5 +1,4 @@
-<h1>Users#new</h1>
-<p>Find me in app/views/users/new.html.erb</p>
+<h1>Create new user</h1>
 
 <%# <form action="/users" method="post" accept-charset="UTF-8">
   <label for="username">Username:</label>
@@ -21,12 +20,4 @@
   <%= submit_tag("Submit") 
 <% end %> 
 
-<%= form_with model: @user do |form| %>
-  <%= form.label :username, "Username:" %>
-  <%= form.text_field :username, placeholder: "jdoe" %>
-  <%= form.label :email, "Email:" %>
-  <%= form.text_field :email, placeholder: "johndoe@gmail.com" %>
-  <%= form.label :password, "Password:" %>
-  <%= form.password_field :password, placeholder: "ex@mplePass" %>
-  <%= form.submit "Submit" %>
-<% end %>
+<%= render 'form' %>
